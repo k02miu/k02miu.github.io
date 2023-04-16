@@ -1,40 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Bootstrap Link Collection</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
+
 <body>
   <div class="container">
-    <h1 class="text-center my-5">Bootstrap Link Collection</h1>
+    <h1 class="text-center my-5">WeddingNews Deeplink</h1>
     <div class="card-deck">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Link Title 1</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor leo vel velit fringilla laoreet.</p>
-          <a href="#" class="btn btn-primary">Go to Link</a>
+          <h5 class="card-title">ホームタブ</h5>
+          <hr />
+          <p class="card-text">ホームタブを開く（カテゴリを開いてた場合そのまま）</p>
+          <a href="originallife-weddingnews://weddingnews.jp/home" class="btn btn-primary">prd</a>
+          <a href="originallife-weddingnews-debug://weddingnews.jp/home" class="btn btn-secondary">stg</a>
+          <hr />
+          <p class="card-text">ホームタブの特定カテゴリ</p>
+          <a href="originallife-weddingnews://weddingnews.jp/home/${category_id}" class="btn btn-primary">prd</a>
+          <a href="originallife-weddingnews-debug://weddingnews.jp/home/${category_id}" class="btn btn-secondary">stg</a>
+          <hr />
+          <p class="card-text">ホームタブで特定記事をWebViewで表示（カテゴリは記事に合ったものが開く）</p>
+          <a href="originallife-weddingnews://weddingnews.jp/home/articles/${article_id}" class="btn btn-primary">prd</a>
+          <a href="originallife-weddingnews-debug://weddingnews.jp/home/articles/${article_id}" class="btn btn-secondary">stg</a>
+          <hr />
+          <p class="card-text">ホームタブのダンドリ記事の特定ダンドリの記事リストを表示</p>
+          <a href="originallife-weddingnews://weddingnews.jp/home/1010/${dandori_id}/articles" class="btn btn-primary">prd</a>
+          <a href="originallife-weddingnews-debug://weddingnews.jp/home/1010/${dandori_id}/articles" class="btn btn-secondary">stg</a>
+          <hr />
+          <p class="card-text">ホームタブのダンドリ記事の特定ダンドリのLPをWebViewで表示</p>
+          <a href="originallife-weddingnews://weddingnews.jp/home/1010/${dandori_id}/lp" class="btn btn-primary">prd</a>
+          <a href="originallife-weddingnews-debug://weddingnews.jp/home/1010/${dandori_id}/lp" class="btn btn-secondary">stg</a>
+          <hr />
+          <p class="card-text">カウントダウン画像保存ページへ遷移</p>
+          <a href="originallife-weddingnews://weddingnews.jp/home/1010/countdown" class="btn btn-primary">prd</a>
+          <a href="originallife-weddingnews-debug://weddingnews.jp/home/1010/countdown" class="btn btn-secondary">stg</a>
+          <hr />
+          <p class="card-text">ホームタブのクーポンを表示</p>
+          <a href="originallife-weddingnews://weddingnews.jp/home/1009" class="btn btn-primary">prd</a>
+          <a href="originallife-weddingnews-debug://weddingnews.jp/home/1009" class="btn btn-secondary">stg</a>
+          <hr />
+          <p class="card-text">ホームタブのクーポンカテゴリのクーポン詳細をWebViewで表示</p>
+          <a href="originallife-weddingnews://weddingnews.jp/home/1009/${coupon_id}" class="btn btn-primary">prd</a>
+          <a href="originallife-weddingnews-debug://weddingnews.jp/home/1009/${coupon_id}" class="btn btn-secondary">stg</a>
         </div>
       </div>
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Link Title 2</h5>
-          <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-          <a href="#" class="btn btn-primary">Go to Link</a>
+          <h5 class="card-title">式場タブ</h5>
+          <hr />
+          <p class="card-text">式場タブ  式場検索</p>
+          <a href="originallife-weddingnews://weddingnews.jp/hall" class="btn btn-primary">prd</a>
+          <a href="originallife-weddingnews-debug://weddingnews.jp/hall" class="btn btn-secondary">stg</a>
+          <hr />
+          <p class="card-text">式場タブ　式場診断</p>
+          <a href="originallife-weddingnews://weddingnews.jp/hall_diagnosis" class="btn btn-primary">prd</a>
+          <a href="originallife-weddingnews-stg://weddingnews.jp/hall_diagnosis" class="btn btn-secondary">stg</a>
+          <hr />
+          <p class="card-text">式場詳細<br>式場タブに遷移し、その上にPushでページを開く</p>
+          <a href="originallife-weddingnews://weddingnews.jp/hall/${hall_id}" class="btn btn-primary">prd</a>
+          <a href="originallife-weddingnews-debug://weddingnews.jp/hall/${hall_id}" class="btn btn-secondary">stg</a>
+          <hr />
+          <p class="card-text">式場タブ　式場診断</p>
+          <a href="originallife-weddingnews://weddingnews.jp/hall/hall_diagnosis" class="btn btn-primary">prd</a>
+          <a href="originallife-weddingnews-debug://weddingnews.jp/hall/hall_diagnosis" class="btn btn-secondary">stg</a>
+          <hr />
+          <p class="card-text">式場タブ　式場検索</p>
+          <a href="originallife-weddingnews://weddingnews.jp/hall/search" class="btn btn-primary">prd</a>
+          <a href="originallife-weddingnews-debug://weddingnews.jp/hall/search" class="btn btn-secondary">stg</a>
+          <hr />
+          <p class="card-text">エリア別式場検索結果画面<br>式場タブに遷移し、その上にPushでページを開く</p>
+          <a href="originallife-weddingnews://weddingnews.jp/pref/${prefecutre}" class="btn btn-primary">prd</a>
+          <a href="originallife-weddingnews-debug://weddingnews.jp/pref/${prefecutre}" class="btn btn-secondary">stg</a>
         </div>
       </div>
       <div class="card">
         <div class="card-body">
           <h5 class="card-title">Link Title 3</h5>
-          <p class="card-text">Nullam rutrum nisi at ante dignissim, vel semper velit dignissim. Etiam eget tristique ipsum, non faucibus turpis.</p>
+          <p class="card-text">Link</p>
           <a href="#" class="btn btn-primary">Go to Link</a>
         </div>
       </div>
     </div>
   </div>
-  
+
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
+
 </html>
